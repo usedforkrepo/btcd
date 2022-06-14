@@ -107,7 +107,7 @@ type GetBlockVerboseTxResult struct {
 	MerkleRoot    string        `json:"merkleroot"`
 	Tx            []TxRawResult `json:"tx,omitempty"`
 	Time          int64         `json:"time"`
-	Nonce         uint32        `json:"nonce"`
+	Nonce         uint32        `json:"-"`
 	Bits          string        `json:"bits"`
 	Difficulty    float64       `json:"difficulty"`
 	PreviousHash  string        `json:"previousblockhash"`
