@@ -82,7 +82,7 @@ type GetBlockVerboseResult struct {
 	Tx            []string      `json:"tx,omitempty"`
 	RawTx         []TxRawResult `json:"rawtx,omitempty"` // Note: this field is always empty when verbose != 2.
 	Time          int64         `json:"time"`
-	Nonce         uint32        `json:"nonce"`
+	Nonce         uint32        `json:"-"`
 	Bits          string        `json:"bits"`
 	Difficulty    float64       `json:"difficulty"`
 	PreviousHash  string        `json:"previousblockhash"`
